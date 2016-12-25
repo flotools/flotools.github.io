@@ -1,7 +1,6 @@
 ---
 layout: default
 ---
-          {% include share.html %}
 
 <div class="posts">
   {% for post in site.posts %}
@@ -12,10 +11,10 @@ layout: default
       <div class="entry">
         {{ post.excerpt }}
       </div>
-
+      {% if post.excerpt != post.content %}
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+      {% endif %}
     </article>
-  {% endfor %}
+<hr/>
+{% endfor %}
 </div>
-                                   
-                                    

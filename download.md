@@ -42,4 +42,4 @@ permalink: /download/
 </div>
 <!--End mc_embed_signup-->
 
-<p>Download <a href="https://github.com/flotools/flotools/archive/master.zip" onclick="trackLink('Flo Tools 1.0', 'Download', 'https://github.com/flotools/flotools/archive/master.zip'); return false;">Flo Tools 1.0</a>.</p>
+<p>Download <a href="https://github.com/flotools/flotools/archive/master.zip" onclick="trackLink('Flo Tools 2.0', 'Download', 'https://github.com/flotools/flotools/archive/master.zip'); return false;">Flo Tools 2.0</a>.</p>
