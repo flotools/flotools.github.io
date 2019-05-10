@@ -5,9 +5,30 @@ permalink: /download/
 ---
 
 
-<p>When downloading Flo Tools 2018.7, you do not need to download Flo Num Pad and Flo Mouse. Both are included in the installer. Flo Tools 2018.7 also requires MacOS Sierra with Keyboard Maestro 8. If you're running earlier versions of either, please download Flo Tools 2.3.2, along with   Flo Num Pad and Flo Mouse. Download links are below.</p>
+## Flo Tools 2019.5
+**Minimum Requirements:**
 
-<a href="https://github.com/flotools/flotools/archive/v2018.7.zip" onclick="trackLink('Flo Tools 2.3.2', 'Download', 'https://github.com/flotools/flotools/archive/v2018.7.zip'); return false;">Flo Tools v2018.7</a>
+* MacOS 10.12 Sierra
+* Pro Tools 2019.5
+* Keyboard Maestro 8
+
+<a href="https://github.com/flotools/flotools/archive/v2019.5.zip" onclick="trackLink('Flo Tools 2019.5', 'Download', 'https://github.com/flotools/flotools/archive/v2019.5.zip'); return false;">Flo Tools v2019.5</a>
+
+## Flo Tools 2018.7
+**Minimum Requirements:**
+
+* MacOS 10.12 Sierra
+* Pro Tools 12.6
+* Keyboard Maestro 8
+
+<a href="https://github.com/flotools/flotools/archive/v2018.7.zip" onclick="trackLink('Flo Tools 2018.7', 'Download', 'https://github.com/flotools/flotools/archive/v2018.7.zip'); return false;">Flo Tools v2018.7</a>
+
+## Flo Tools 2.3.2
+**Minimum Requirements:**
+
+* MacOS 10.10 Yosemite
+* Pro Tools 12.3
+* Keyboard Maestro 7
 
 <a href="https://github.com/flotools/flotools/archive/v2.3.2.zip" onclick="trackLink('Flo Tools 2.3.2', 'Download', 'https://github.com/flotools/flotools/archive/v2.3.2.zip'); return false;">Flo Tools v2.3.2</a>
 
