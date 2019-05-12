@@ -5,14 +5,14 @@ permalink: /download/
 ---
 
 
-## Flo Tools 2019.5
+## Flo Tools 2019.5.1
 **Minimum Requirements:**
 
 * MacOS 10.12 Sierra
 * Pro Tools 2019.5
 * Keyboard Maestro 8
 
-<a href="https://github.com/flotools/flotools/archive/v2019.5.zip" onclick="trackLink('Flo Tools 2019.5', 'Download', 'https://github.com/flotools/flotools/archive/v2019.5.zip'); return false;">Flo Tools v2019.5</a>
+<a href="https://github.com/flotools/flotools/archive/v2019.5.1.zip" onclick="trackLink('Flo Tools 2019.5.1', 'Download', 'https://github.com/flotools/flotools/archive/v2019.5.1.zip'); return false;">Flo Tools v2019.5.1</a>
 
 ## Flo Tools 2018.7
 **Minimum Requirements:**
