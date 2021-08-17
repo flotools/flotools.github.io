@@ -317,11 +317,11 @@ Below is the list of remapped keyboard keys when using the num pad group.
 * i: 5
 * o: 6
 * 7, 8, 9, and the period key on the qwerty keyboard are mapped to num pad 7, 8, 9 and period.
-* Semicolon: *
-* apostrophe: /
-* Left bracket: minus
-* Right Bracket: +
-* comma: equals
+* Semicolon: equals
+* comma: Stars
+* Slash: /
+* Hyphen (-): minus
+* Equals (=): +
 
 
 
