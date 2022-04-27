@@ -56,7 +56,7 @@ Once downloaded, this  zip file, referenced in this read me, will automatically 
 
 Flo Tools supports Mac OS version 10.12 or later, and Pro Tools version 12.3 or later. Pro Tools First has limited support at this time from version 12.8.2 or higher. Earlier versions of Mac OS, Pro Tools, and Pro Tools First may provide limited functionality with Flo Tools, but have not been tested and are not guaranteed to function correctly.
 
-Please Note: If you're using versions of Pro Tools or Pro Tools First prior to Pro Tools 2019, you are required to use Flo Tools 2018.7. If you are using Pro Tools or Pro Tools First version 2019 or later, you must use Flo Tools 2019.5.
+Please Note: If you're using versions of Pro Tools or Pro Tools First prior to Pro Tools 2019, you are required to use Flo Tools 2018.7. If you are using Pro Tools or Pro Tools First version 2019 or later, you must use Flo Tools 2019.5.1 or later.
 
 
 
@@ -83,13 +83,13 @@ Keyboard Maestro is limited by a 30-day trial period. After this time, a purchas
 
 More information about purchasing a license can be found [here.](https://wiki.keyboardmaestro.com/manual/Purchase)
 
-Keyboard Maestro occasionally provides spoken notifications to alert you to tasks it's performing in the background. If these become bothersome, you can turn them off by going to system preferences, notifications, and choosing Keyboard Maestro Engine from the table. Then select "none" under Alert Style.
+Keyboard Maestro occasionally provides spoken notifications to alert you to tasks it's performing in the background. If these become bothersome, you can turn them off by going to system preferences, notifications, and choosing Keyboard Maestro Engine from the table. Then set the "allow notifications" toggle to off.
 
 ### Flo Tools Installation
 
 To install Flo Tools, go to the provided zip file, and open the application called "Flo Tools Installer". Follow the on-screen prompts to guide you through installation.
 
-For the scripts to run properly, open Keyboard Maestro Preferences, and under the general tab, check the box labeled, "Start Keyboard Maestro Engine at log-in." Note that the Keyboard Maestro window does not need to be open for the scripts to run.
+For the scripts to run properly, open Keyboard Maestro Preferences, and under the general tab, check the box labeled, "Start Keyboard Maestro Engine at log-in." Note that the Keyboard Maestro application does not need to be open for the scripts to run.
 
 ### Optimizing Pro Tools for Flo Tools
 
@@ -103,7 +103,7 @@ For all functions of Flo Tools to work as expected, it is recommended to apply t
 6. In the toolbar menu of the edit window, the "Transport", "midi Controls", and "expanded transport" settings should be checked.
 7. If the default keyboard is not set to "US" in System Preferences, Keyboards, input sources, please add it to the list of input sources, and switch to it when using Flo Tools.
 
-A FloTools Session Template with these settings is provided for convenience when installing  FloTools 2018.7 and above.
+A FloTools Session Template with these settings is provided for convenience when installing  FloTools 2018.7 or later.
 
 Pro Tools includes a Keyboard Focus mode, within which commands are issued through single letter keystrokes. When Keyboard Focus mode is not active, these same commands can be issued by adding the Control key as a modifier. Since certain Flo Tools commands are issued with single letter taps and double-taps, it is recommended that users avoid the Keyboard Focus mode in Pro Tools. 
 
@@ -117,14 +117,14 @@ To allow use of the  Control modifier instead of keyboard focus mode for Pro Too
 
 ### Auditory Feedback
 
-Flo Tools uses 2 distinct sounds to provide auditory feedback when it is performing a task. The first is [This Sound](Tink.aiff), which tells a user that something has been toggled, such as solo on or off.
+Flo Tools uses 2 distinct sounds to provide auditory feedback when it is performing a task. The first is [This Sound](/media/Tink.aiff), which tells a user that something has been toggled, such as solo on or off.
 
-The second is [This Sound](Pop.aiff), which signals that something is in process and the user needs to wait for Flo Tools to complete a task. An example of this would be deselecting all tracks in a large session.
+The second is [This Sound](/media/Pop.aiff), which signals that something is in process and the user needs to wait for Flo Tools to complete a task. An example of this would be deselecting all tracks in a large session.
 
 
 ### Commands
 
-Flo Tools is organized into 24 macro groups inside of Keyboard Maestro. Below is a list of Flo Tools commands, and their associated functions, separated by their respective groups.
+Flo Tools is organized into 25 macro groups inside of Keyboard Maestro. Below is a list of Flo Tools commands, and their associated functions, separated by their respective groups.
 
 #### Flo Tools
 
@@ -148,25 +148,26 @@ Where two actions are listed, double-tapping the key will perform the second act
 * Speak/Edit Tempo:	Command+f11
 * Close All Floating Windows: Command+Option+w
 * Speak Shown Tracks, Show Track List Pop-up Menu:	Option+Shift+w
-* List Shown Tracks:	Control+Shift+w
+* List Shown Tracks:	Control+Option+Shift+L
 * Speak Hidden Tracks, Show Track List Pop-up Menu:	Option+Shift+h
-* List Hidden Tracks:	Control+Shift+h
+* List Hidden Tracks:	Control+Option+Shift+L
 * Speak Selected Tracks, Deselect All Tracks: Option+Shift+l
-* List Selected Tracks, List Unselected Tracks:	Control+Shift+l
-* Speak Input Monitor-Enabled Tracks, Disable Input Monitor On All Tracks: Option+Shift+k
-* List Input Monitor-Enabled Tracks, List Input Monitor-Disabled  Tracks:	Control+Shift+k
+* List Selected Tracks, List Unselected Tracks:	Control+Option+Shift+L
+* Speak Input Monitor-Enabled Tracks, Disable Input Monitor On All Tracks: Control+Option+Shift+L
+* List Input Monitor-Enabled Tracks, List Input Monitor-Disabled  Tracks:	Control+Option+Shift+L
 * Speak Record-Enabled Tracks, Disarm All Record Enabled Tracks: Option+Shift+r
-* List Record-Enabled Tracks, List Record-Disabled Tracks:	Control+Shift+r
+* List Record-Enabled Tracks, List Record-Disabled Tracks:	Control+Option+Shift+L
 * Speak Soloed Tracks, UnSolo All Tracks: Option+Shift+s
-* List Soloed Tracks, List Unsoloed Tracks:	Control+Shift+s
+* List Soloed Tracks, List Unsoloed Tracks:	Control+Option+Shift+L
 * Speak Muted Tracks, UnMute All Tracks: Option+Shift+m
-* List Muted Tracks, List Unmuted Tracks:	Control+Shift+m
- * Note that this shortcut overrides one of the Pro Tools shortcuts for "Nudge the Selected Clip Gain Back." Use either Control+Shift+minus or Control+Shift+comma instead
+* List Muted Tracks, List Unmuted Tracks:	Control+Option+Shift+L
 * Speak Record Safe Tracks: Command+Option+Shift+r
 * Speak Solo Safe Tracks: Command+Option+Shift+s
 * Speak tracks who’s level is greater then or equal to 0DB: Option+Shift+0
 * Speak and select Previous Playlist: Shift + Up Arrow
 * Speak and select Next Playlist: Shift+Down Arrow
+* Toggle and Speak Link Track and Edit Selection: Shift+T (does not require a double tap)
+* Toggle and Speak link timeline and edit selection: Shift+/ (does not require double tap)
 * Speak and Select Previous Track: Control+P
 * Speak and select Next Track: Control+; (semicolon)
 * Speak and add Previous Track to Selection: Control+Shift+P
@@ -176,7 +177,6 @@ Where two actions are listed, double-tapping the key will perform the second act
 * Speak/Toggle Metronome:	Option+num pad 7
 * Speak/Toggle Count In:	Option+num pad8
 * Speak/Toggle Midi Merge:	Option+num pad 9
-* Speak/Toggle Link Timeline and Edit Selection: Shift+/
 * Speak/Toggle Tab to Transients:	Command+Option+Tab
 * Speak/Toggle Insertion Follows Playback:	Control+N
 * Speak/Toggle Online Transport: Command+J
@@ -186,6 +186,7 @@ Where two actions are listed, double-tapping the key will perform the second act
 * Speak/Select Spot Mode:	f3
 * Speak/Select Grid Mode (and Toggle Absolute/Relative Grid Mode):	f4
 * Speak/toggle quickpunch:	Command+Shift+p
+* Speak/toggle track punch: command+Shift+T
 * Speak/Toggle loop playback:	Command+Shift+l
 * Speak/Toggle Loop Record:	Option+l
 * Speak/Toggle Pre/Post-Roll:	Command+K
@@ -218,7 +219,7 @@ Note: The inspector must be disabled to use first-letter navigation in any pop-u
 Where 2 actions are listed, double tapping the key will perform the second action.
 
 * Toggle Inspector on or off: /
-* Speak Track Name, Select Track Pop-Up Menu: t
+* Speak And Select Track/Show Right-Click Menu: t
 * Speak/Open Inserts A through J:	1 through 0 on the numbers row
 * Assign Inserts A through J:	Command+1 through 0 on the numbers row
  * Note that Command+1 through 5 are also shortcuts for selecting Pro Tools presets. Turn off the inspector to access these shortcuts. See the Pro Tools Keyboard Shortcuts pdf for more details.
@@ -229,7 +230,7 @@ Where 2 actions are listed, double tapping the key will perform the second actio
 * Speak/Select Instrument Input: Option+i
 * Speak/Select Track Output: o
 * Speak/Select Instrument Output: Option+o
-* Beta: Speak/Select Automation Mode: a
+* Speak/Select Automation Mode: a
 * Speak/Select Group: g
 * Speak/Reset Pan: n
 * Adjust pan value for mono track: Command+Control+left-or-right-arrows
@@ -250,7 +251,7 @@ Where 2 actions are listed, double tapping the key will perform the second actio
 * Speak/Edit Comments: c
 * Track Options Menu: h
 * Speak/Select Playlist: \
-* Beta: Speak/Select Track View: w
+* Speak/Select Track View: w
 * Speak/Toggle Freeze Status: f
 * Speak/Select Timebase: b
 * Beta: Speak/Select Elastic Audio Plugin: eFloTools also includes a temporary inspector, which only allows inspector commands to be executed while the accent key is pressed. This allows the Qwerty keyboard to be used for regular functions without conflict or interference of the inspector. 
@@ -303,7 +304,7 @@ This macro group allows easier navigation and editing of the Midi Event List usi
 * Edit Event:	Control+Command+Return
 
 
-#### Flo Num Pad
+#### Flo Num Pad (now merged into virtual extended keyboard)
 
 Flo Tools provides a key remapping using the keyboard as a standard num pad. This num pad group of remappings can be used system-wide by pressing the function or FN key simultaneously with any remapped key.
 
@@ -317,11 +318,11 @@ Below is the list of remapped keyboard keys when using the num pad group.
 * i: 5
 * o: 6
 * 7, 8, 9, and the period key on the qwerty keyboard are mapped to num pad 7, 8, 9 and period.
-* Semicolon: equals
-* comma: Stars
-* Slash: /
-* Hyphen (-): minus
-* Equals (=): +
+* Semicolon: *
+* apostrophe: /
+* Left bracket: minus
+* Right Bracket: +
+* comma: equals
 
 
 
@@ -364,7 +365,7 @@ Rather than randomly pressing keys to hear their functions, you can also press C
  <div id='misc'/>
 ## Misc
 
-### Changing Shortcuts
+### Changing Flo Tools Shortcuts
 
 The shortcuts outlined above are the default assignments for Flo Tools. They may be changed based on personal preference, however, when Flo Tools is updated, the shortcuts will revert back to their default assignments. To  change a shortcut, open Keyboard Maestro and do the following:
 
@@ -380,13 +381,16 @@ To change it, simply type the new desired shortcut and then stop interacting wit
 
 ### Reinstalling Flo Tools
 
-The provided zip file contains both an installer and uninstaller for Flo Tools. If  Flo Tools needs to be reinstalled for any reason, simply run the installer and follow the prompts to be guided through installation. All Flo Tools related macros will be automatically replaced with the ones within the installer. Be sure you have the latest version of the installer by downloading it from the Flo Tools website.
+If  Flo Tools needs to be reinstalled for any reason, simply re-run the FloTools installer and follow the prompts to be guided through installation. All previously existing Flo Tools related macros will be automatically replaced with the ones within the installer. Be sure you have the latest version of the installer by downloading it from the Flo Tools website.
 
 You can check the version you’re running, and check for updates by opening Pro Tools, and then navigating to the "Keyboard Maestro Engine" Menu Extra and arrowing through the options until you hear "Flo Tools". Arrow down to hear the version number and the option to check for updates.
 
 ### Uninstalling Flo Tools
 
-The uninstaller is only required if you wish to completely remove Flo Tools and its associated files and folders from your computer. To uninstall the Flo Tools scripts and associated plugin views, run the uninstaller application and follow the on-screen prompts to remove Flo Tools.
+The provided zip file contains both an installer and uninstaller for Flo Tools. The uninstaller is only required if you wish to completely remove Flo Tools and its associated files and folders from your computer. If you're only trying to re-install Flo 
+Tools, see above for instructions.
+
+To uninstall the Flo Tools scripts and associated plugin views, run the uninstaller application and follow the on-screen prompts to remove Flo Tools.
 
 Please backup any text files in the Plugin Views folder that you’d like to keep, as these will be permanently deleted during Flo Tools removal.
 
@@ -396,7 +400,7 @@ Note that if you wish to uninstall Keyboard Maestro, it must be removed manually
 ### Known Issues
 
 * Items marked as "Beta" may not function as expected, and should not be used regularly until they are no longer in the beta stage.
-* In versions of Pro Tools prior to 2018.1, checking the arm state of tracks does not report consistently. To work around this, check the arm state multiple times. However, Avid fixed the Track and Global record buttons to correctly report their status in Pro Tools versions 2018.1, so Flo Tools can now report track record states with complete accuracy.
+* In versions of Pro Tools prior to 2018.1, checking the arm state of tracks does not report consistently. To work around this, check the arm state multiple times. However, Avid fixed the Track and Global record buttons to correctly report their status in Pro Tools versions 2018.1 and later, so Flo Tools can now report track record states with complete accuracy.
 
 ### Reporting Issues
 
@@ -531,16 +535,17 @@ FloTools 2018.7 and above also requires that the installed version of Keyboard M
 * added  FloTools preferences: Command+Control+, (Comma)
 * added temporary inspector. To activate, press and hold accent key while performing inspector functions. Release Accent key to exit temporary inspector.
 
-### Flo Tools 2019.5:
 
-FloTools 2019.5 replaces FloNumPad with the Virtual Extended Keyboard, adds compatibility to Pro Tools 2019.5 and above, and fixes a few bugs. To find more information about the new changes in Flo Tools 2019.5, see the What's New documentation. Below is the changelog:
+### Flo Tools 2019.5.1:
 
-#### Macros which have come out of Beta, and are now fully functional:
+FloTools 2019.5.1 replaces FloNumPad with the Virtual Extended Keyboard, adds compatibility to Pro Tools 2019.5 and above, and fixes a few bugs. To find more information about the new changes in Flo Tools 2019.5, see the What's New documentation. Below is the changelog:
+
+* Macros which have come out of Beta, and are now fully functional:
  * Speak/Select Automation
  * Speak/Select Elastic Audio
  * Speak/Select Track View
 
-#### New macros
+* New macros
  * Speak And Navigate to First playlist: shift+home
  * Speak And Navigate to last playlist: shift+end
  * Speak And Move Ahead 5 Playlists: shift+page down
@@ -559,10 +564,10 @@ FloTools 2019.5 replaces FloNumPad with the Virtual Extended Keyboard, adds comp
  * Render in Audio Suite: control+option+shift+command+r
  * Bypass in Audio Suite: Control+Option+Command+Shift+b
 
-#### Fixed
+* Fixed
  * Load default plug-in view
 
-#### Changed counter announcement to reflect change in Pro Tools 2019:
+* Changed counter announcement to reflect change in Pro Tools 2019:
  * Press delete, then type Start value
  * Press Delete, then type End value
  * Press Delete, then type Length value
@@ -572,14 +577,46 @@ FloTools 2019.5 replaces FloNumPad with the Virtual Extended Keyboard, adds comp
  * Press Delete, then type Pre-Roll amount
  * Press Delete, then type Post-Roll amount
 
-#### Renamed Macros:
+* Renamed Macros:
  * pan left on mono/left channel, Command Control Left Arrow
  * pan right on mono/left channel, Command Control Right Arrow
  * pan left on right channel, Command Control Shift Left Arrow
  * pan right on right channel, Command Control Shift Right Arrow
 
-#### Shortcuts changed
+* Shortcuts changed
  * Increase Instrument Volume: control+option+up Arrow
  * Decrease Instrument Volume: control+option+Down Arrow
 
 
+### FloTools 2020.3
+
+* allowed FloTools to recognize folder tracks
+* fixed shortcut helper macros to reflect changes in Pro Tools 2020.3
+
+
+### FloTools 2020.3.1:
+
+* Fixed bugs related to arming and solo/mute with folder tracks
+
+
+### FloTools 2020.5:
+
+* Fixed a bug that caused the "unsolo all tracks" macro to stop working, if a folder and one of it's member tracks were simultaneously soloed.
+* extending the track selection up or down by using control shift P or semi-colon now only reports the names of tracks being added to the selection. However, this stops VoiceOver from studdering while using the above macros.
+
+### Flo Tools 2022.4:
+
+New Features:
+
+* Speak/Toggle wait for Note
+ * flo Tools can now report the status of the "wait for Note" feature and toggle it without having to go into the MIDI Control Cluster. Pressing Option+F11 once will speak the status and double-tapping Option+F11 will toggle its state. There is an option to use F11 for "Wait for Note" under the MIDI tab of Pro Tools preferences. The flo Tools "Speak/Toggle wait for Note" function will work regardless of this preference.
+* Speak/Toggle Conductor: Option+F12
+* Speak/Toggle Track Punch: Command+Shift+t
+* FloTools now includes a custom keyset for Pro Tools Keyboard Shortcuts, adding a shortcut for renaming tracks (command+return) and Spot Clip to Insertion (Control+Option+Shift+S)
+
+Changes:
+
+
+* all "List Tracks with Flo Tools" Commands changed to single macro pallet: Control+Option+Shift+L.
+* Pressing T in the inspector will now speak and select the current track. Double tapping T will bring up the context menu as always.
+* fixed shortcuts for toggling track and edit selection, and timeline and edit selection, so they no longer cause conflicts when typing in text fields.
