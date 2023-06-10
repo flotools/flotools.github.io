@@ -5,14 +5,14 @@ permalink: /download/
 ---
 
 
-## Flo Tools 2022.4.0
+## Flo Tools 2023.6.0
 **Minimum Requirements:**
 
 * MacOS 10.12 Sierra
 * Pro Tools 2019.5
 * Keyboard Maestro 8
 
-<a href="https://github.com/flotools/flotools/releases/download/v2022.4.0/Flo.Tools.v2022.4.0.zip" onclick="trackLink('Flo Tools 2022.4.0', 'Download', 'https://github.com/flotools/flotools/releases/download/v2022.4.0/Flo.Tools.v2022.4.0.zip'); return false;">Flo Tools v2022.4.0</a>
+<a href="https://github.com/flotools/flotools/releases/download/v2023.6.0/Flo.Tools.v2023.6.0.zip" onclick="trackLink('Flo Tools 2023.6.0', 'Download', 'https://github.com/flotools/flotools/releases/download/v2023.6.0/Flo.Tools.v2023.6.0.zip'); return false;">Flo Tools v2023.6.0</a>
 
 ## Flo Tools 2018.7
 **Minimum Requirements:**
